@@ -110,6 +110,7 @@ async function DisplayPosts() {
         window.location.href = "Comments.html";
       });
 
+     
       const commentsSection = document.createElement("div");
       commentsSection.classList.add("comments-section");
       const commentLogo = document.createElement("img");
@@ -123,6 +124,7 @@ async function DisplayPosts() {
         console.log("New CommentPosted");
       });
 
+      
       commentsSection.appendChild(commentLogo);
       commentsSection.appendChild(addComment);
 
@@ -273,33 +275,11 @@ async function displaycomments() {
       wrapper.appendChild(commentItem);
     }
 
-    const addCommentTextarea = wrapper.querySelector(".add-comment-text");
     const AddNewCommentBtn = wrapper.querySelector("#add-new-comment");
 
     AddNewCommentBtn.addEventListener("click", () => {
-      const currentUser = localStorage.getItem("userEmail");
-      const commentText = addCommentTextarea.value.trim();
 
-      if (commentText) {
-        const commentItem = document.createElement("div");
-        commentItem.classList.add("commentItem");
-
-        commentItem.innerHTML = `
-          <div class="comment-wrapper">
-            <div class="logo"></div>
-            <h4>${currentUser}</h4>
-            <div class="comment-item-content">${commentText}</div>
-          </div>
-        `;
-
-        wrapper.appendChild(commentItem);
-        commentsContainer.appendChild(wrapper);
-
-        // Clear the textarea after adding the comment
-        addCommentTextarea.value = "";
-
-        console.log("New comment posted successfully");
-      }
+      AddNewComment(wrapper, commentsContainer);
     });
 
     console.log("Comments:", comments);
@@ -309,6 +289,38 @@ async function displaycomments() {
   }
 }
 
+
+//#########################################################
+
+function AddNewComment(wrapper, commentsContainer){
+
+
+  const addCommentTextarea = wrapper.querySelector(".add-comment-text");
+  const currentUser = localStorage.getItem("userEmail");
+  const commentText = addCommentTextarea.value.trim();
+
+  if (commentText) {
+    const commentItem = document.createElement("div");
+    commentItem.classList.add("commentItem");
+
+    commentItem.innerHTML = `
+      <div class="comment-wrapper">
+        <div class="logo"></div>
+        <h4>${currentUser}</h4>
+        <div class="comment-item-content">${commentText}</div>
+      </div>
+    `;
+
+    wrapper.appendChild(commentItem);
+    commentsContainer.appendChild(wrapper);
+
+    // Clear the textarea after adding the comment
+    addCommentTextarea.value = "";
+
+    console.log("New comment posted successfully");
+  }
+
+}
 //#########################################################
 
 function handleLogout() {
