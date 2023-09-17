@@ -333,6 +333,10 @@ font-weight: 400;
   position: relative;
 }
 
+.modal-content textarea{
+  margin: 20px;
+}
+
 .close {
   position: absolute;
   top: 0;
