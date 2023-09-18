@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   font-family: 'comfortaa', sans-serif;
+  z-index: -1;
 
 }
 
@@ -133,12 +134,13 @@ main {
   border: 1px solid #000;
 }
 
-.back-arrow a{
+.back-arrow a {
   color: #000;
   position: absolute;
   right: 18px;
   top: 15px;
 }
+
 .container {
   width: 500px;
   height: auto;
@@ -159,7 +161,7 @@ main {
 
 }
 
-.name-logo{
+.name-logo {
   width: 28px;
   height: 28px;
   position: absolute;
@@ -175,7 +177,7 @@ main {
   font-weight: bold;
   font-family: "Roboto", Helvetica;
   font-size: 13px;
-  margin-left :15px;
+  margin-left: 15px;
 }
 
 .wrapper p {
@@ -184,7 +186,7 @@ main {
   font-family: "Roboto", Helvetica;
   font-size: 11px;
   font-weight: 400;
-  margin-left :15px;
+  margin-left: 15px;
 
 }
 
@@ -195,60 +197,61 @@ main {
   font-family: "Roboto", Helvetica;
   font-size: 15px;
   font-weight: 400;
-text-align:justify;
-margin-top: 25px;
+  text-align: justify;
+  margin-top: 25px;
 }
 
-.AddPost{
-  position: absolute;
-  right: 45px;
+.AddPost {
+  /* position: absolute; */
+  /* right: 45px; */
   background: linear-gradient(rgba(255, 0, 214, 1), rgba(255, 77, 0, 1));
   width: 94px;
   height: 50px;
-  top: 100px;
+  /* top: 100px; */
   border-radius: 17px;
   border: none;
   font-size: 35px;
   cursor: pointer;
+  color: #fff;
 
 }
 
-.comments-section{
+.comments-section {
   display: flex;
-border-top: 1px solid #bdbdbd;
-border-bottom:1px solid #bdbdbd;
-position: relative;
-height: 35px;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+  position: relative;
+  height: 35px;
 }
 
 
-.see-comments{
+.see-comments {
   height: 13px;
-width: 80px;
-font-family: "Roboto", Helvetica;
-font-size: 11px;
-font-weight: 400;
-color: #000;
+  width: 80px;
+  font-family: "Roboto", Helvetica;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
   position: absolute;
   right: 0;
   top: 8px;
   cursor: pointer;
   text-decoration: none;
-} 
+}
 
-.add-comment{
+.add-comment {
   outline: none;
   border: none;
   padding: 6px 10px;
   text-align: left;
 }
 
-.commentItem{
+.commentItem {
   /* border: 1px solid red; */
   width: 400px;
 }
 
-.comment-item-content{
+.comment-item-content {
 
   width: 96%;
   /* border: 1px solid purple; */
@@ -260,7 +263,7 @@ color: #000;
 
 }
 
-.logo{
+.logo {
   width: 28px;
   height: 28px;
   position: absolute;
@@ -270,17 +273,18 @@ color: #000;
   background-color: orangered;
 }
 
-.comment-wrapper{
+.comment-wrapper {
   position: relative;
   padding: 24px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-.add-comment-text{
+.add-comment-text {
 
   border: none;
-    padding: 8px; 
+  padding: 8px;
 }
+
 .add-new-commentBtn {
   background-color: transparent;
   border: none;
@@ -293,11 +297,12 @@ color: #000;
 }
 
 .add-new-commentBtn .icon {
-  color: #002144; /* Set the icon color */
+  color: #002144;
+  /* Set the icon color */
   cursor: pointer;
 }
 
-.logoutBtn{
+.logoutBtn {
   background-color: #1b78db;
   position: absolute;
   right: 50px;
@@ -323,7 +328,7 @@ color: #000;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
@@ -335,7 +340,7 @@ color: #000;
   position: relative;
 }
 
-.modal-content textarea{
+.modal-content textarea {
   margin: 20px;
 }
 
@@ -347,7 +352,7 @@ color: #000;
   cursor: pointer;
 }
 
-#submitPost{
+#submitPost {
   background-color: #1b78db;
   width: 89px;
   height: 46px;
@@ -358,5 +363,21 @@ color: #000;
   font-family: 'Comfortaa';
   font-weight: bold;
   cursor: pointer;
+
+}
+
+.mobile-bottom-nav {
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  width: 100%;
+  height: 61px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 
 }
