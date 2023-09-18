@@ -16,4 +16,4 @@
 
 # Add New Post
 
-![](https://github.com/HidayahJadaan/Login-Form/blob/master/output/NewPost.png)
+![](https://github.com/HidayahJadaan/Login-Form/blob/master/output/AddNew.png)
