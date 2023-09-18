@@ -2,13 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Posts Page</title>
-    
+    <title>Login Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ======= CSS ======= -->
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/all.min.css">
+<!-- ======= CSS ======= -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/all.min.css">
 
 
     <!-- FontAweome CDN Link for Icons -->
@@ -33,46 +32,32 @@
   </head>
   <body>
 
-    <header>
-      <button class="logoutBtn" id="logout">Logout</button>
-    </header>
+  
     <main>
-     
-      <div class="discover">
+      <section>
+        <form id="login-form">
+
+          <h2>Login</h2>
+          <input required type="email" id="email" placeholder="Enter your email">
+          <p id="errorText" class="error-message"></p>
+          <input required type="password" id="password" placeholder="Enter your password">
+          <button type="submit" id="loginBtn">Login</button>
+        </form>
         
-        <div class="dicover-text">Discover</div>
-        <div class="what-s-new-today">what's new today</div>
-      
-      </div>
-
-      
-  
-      <div class="container" id="posts-section" >
-        <!-- Posts will be displayed here -->
-
-        <button class="AddPost" id="AddPost">+</button>
-      </div>
+      </section>
   
       
+  
+  
     </main>
 
 
 
-    <div id="postModal" class="modal">
-      <div class="modal-content">
-
-        <span class="close">&times;</span>
-        <h2>Add New Post</h2>
-        <textarea id="postInput" class="post-item-content" placeholder="What's on your mind...."></textarea>
-        <button id="submitPost">Post</button>
-        
-      </div>
-    </div>
-   
 
 
+    <script src="../js/login.js">
 
-    <script src="./posts.js"></script>
+    </script>
 
   
 

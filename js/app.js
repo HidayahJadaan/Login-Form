@@ -214,8 +214,7 @@ async function displaycomments() {
     // console.log('Selected Post Content', selectedPostCONTENT); // all posts (array of objects)
 
     const thepostcontent = selectedPostCONTENT.filter(
-      (item) => item.id === selectedPostId
-    );
+      (item) => item.id === selectedPostId);
 
     // console.log('0000000000000000000',);
 
@@ -282,7 +281,7 @@ async function displaycomments() {
       AddNewComment(wrapper, commentsContainer);
     });
 
-    console.log("Comments:", comments);
+    // console.log("Comments:", comments);
   } catch (error) {
     console.error("Error fetching comments data", error);
     return [];
