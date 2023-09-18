@@ -6,7 +6,7 @@
 
 # Posts Page
 
-![Posts Page](https://github.com/HidayahJadaan/Login-Form/blob/master/output/PostsPage.png)
+![Posts Page](https://github.com/HidayahJadaan/Login-Form/blob/master/output/postsPage.png)
 
 
 # Comments Page
